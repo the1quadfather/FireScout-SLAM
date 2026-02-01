@@ -28,20 +28,20 @@ FireScout-SLAM/
     └── simulation.py     # Orchestrator & Visualization
 
 
-QUICK START
-1. Clone the repo
+## QUICK START
+**1. Clone the repo**
 git clone [https://github.com/the1quadfather/FireScout-SLAM.git](https://github.com/the1quadfather/FireScout-SLAM.git)
 cd FireScout-SLAM
 
-2. Install dependencies
+**2. Install dependencies**
 pip install numpy matplotlib tqdm
 
-3. Run!
+**3. Run!**
 Open main.ipynb and run all the cells! The parmeters in Cell 2 ("Config") can be changed to suit your curiosity.
 python -m src.simulation
 
 
-RESULTS
+## RESULTS
 The simulation produces a GIF and a map showing:
 - Green Line: Robot's true path
 - Blue Dots: EKF's estimated position (should track very closely to the green line)
@@ -49,7 +49,7 @@ The simulation produces a GIF and a map showing:
 - Orange & Red Icons: Actual landmarks
 
 
-THEORY EXPLAINED
+## THEORY EXPLAINED
 - Motion model is based on a differntial drive's kinematics with Gaussian noise.
 - Observation model is a range-bearing feature extraction method
 - Landmark association is done via nearest-neighbor feature matching

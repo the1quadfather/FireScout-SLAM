@@ -14,6 +14,8 @@ Designed as a portfolio project to showcase **Object-Oriented Architecture**, **
 * **Wall-Following Logic:** Autonomous navigation controller using simulated LIDAR-like sensor data.
 * **Visual Analytics:** Generates post-mission mapping analysis comparing Ground Truth vs. EKF Estimation.
 
+
+
 ## 🛠️ Project Structure
 
 ```text
@@ -26,7 +28,7 @@ FireScout-SLAM/
     ├── environment.py    # Map Generation & Feature Management
     ├── robot.py          # Robot Physics & Sensor Simulation
     └── simulation.py     # Orchestrator & Visualization
-
+```
 
 ## QUICK START
 **1. Clone the repo**
@@ -42,6 +44,7 @@ python -m src.simulation
 
 
 ## RESULTS
+
 The simulation produces a GIF and a map showing:
 - Green Line: Robot's true path
 - Blue Dots: EKF's estimated position (should track very closely to the green line)
@@ -50,6 +53,7 @@ The simulation produces a GIF and a map showing:
 
 
 ## THEORY EXPLAINED
+
 - Motion model is based on a differntial drive's kinematics with Gaussian noise.
 - Observation model is a range-bearing feature extraction method
 - Landmark association is done via nearest-neighbor feature matching
